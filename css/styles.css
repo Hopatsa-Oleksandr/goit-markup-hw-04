@@ -1,0 +1,582 @@
+/* текст цвет основной #757575 */
+/* текст цвет заголовков #212121 */
+/* текст цвет акцент #2196F3 */
+/* текст цвет белый #FFFFFF*/
+/* фон основной белый #FFFFFF */
+/* фон серый  #F5F4FA */
+/* фон акцент #2196F3 */
+/* фон секции шапка, подвал #2F303A */
+/* цвета логотипа #000000  #2196F3 #FFFFFF */
+
+/* Шрифты: все normal
+/* Roboto 400, 500, 700, 900  */
+/* Raleway 700 */
+/* letter-spacing: 0.03em общий текст*/
+/* letter-spacing: 0.02em навигация  */
+/* letter-spacing: 0.06em секция шапки */
+:root {
+  --text-main: #757575;
+  --text-header: #212121;
+  --text-accent: #2196f3;
+  --text-white: #ffffff;
+  --text-address: rgba(255, 255, 255, 0.6);
+  --bgd-primary: #ffffff;
+  --bgd-second: #f5f4fa;
+  --bgd-accent: #2196f3;
+  --bgd-border: #eeeeee;
+  --bgd-line: #ececec;
+  --bgd-header-footer: #2f303a;
+  --bdg-social: rgba(255, 255, 255, 0.1);
+  --bgd-icon: #afb1b8;
+  --bgd-footer-icon: rgba(255, 255, 255, 0.1);
+}
+
+/* Общее - контентные изображения */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Общее - списки*/
+.list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Общее - ссылки */
+.link {
+  text-decoration: none;
+  margin: 0px;
+}
+
+/* Общее - скрыть объект */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Общее - без марджинов */
+.nomargin,
+.title {
+  margin: 0px;
+}
+
+/* Общее - заголовки*/
+.title {
+  color: var(--text-header);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+/* Общее - секции*/
+.section {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Общее - основной контейнер */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Общие параметры для страниц index и portfolio */
+.studio-page,
+.portfolio-page {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  color: var(--text-main);
+  letter-spacing: 0.03em;
+}
+
+/* Общее шапка и подвал */
+.primary,
+.footer {
+  background-color: var(--bgd-header-footer);
+}
+
+/* Общее - паддинги секций */
+.features,
+.team,
+.clients,
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Паддинг секции "Чем мы занимаемся" */
+.activity {
+  padding-bottom: 94px;
+}
+
+.portfolio {
+  border-top: 1px solid var(--bgd-line);
+}
+
+.background {
+  max-width: 1600px;
+  margin: 0px auto;
+  padding: 200px 0px;
+  height: 600px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url('../images/Header.jpg');
+}
+
+.topline {
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+/* Правый марджин между логотипом и ссылками на страницы в основном nav */
+.studio-nav .logo {
+  margin-right: 93px;
+}
+
+.studio-nav {
+  align-items: center;
+}
+
+/* Правые марджины внутри списков из nav и списка контактов */
+.studio-list-page > .item:not(:last-child),
+.studio-list-contacts > .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* Логотип в хедере*/
+.logo {
+  font-family: Raleway, sans-serif;
+  color: var(--text-header);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+/* Цвет первой части логотипа */
+.logo-part-one {
+  color: var(--text-accent);
+}
+/* Цвет второй части логотипа для футтера */
+.logo-part-two {
+  color: var(--text-white);
+}
+
+/* Параметры ссылок навигации по сайту */
+.studio-list-page .link {
+  color: var(--text-header);
+}
+
+/* Параметры ссылок для обратной связи */
+.studio-list-contacts .link {
+  color: var(--text-main);
+}
+
+/* Иконки в хедере */
+.contact-mail-icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 16px;
+}
+.contact-tell-icon {
+  margin-right: 10px;
+  width: 16px;
+  height: 20px;
+}
+
+.studio-list-contacts .link {
+  align-items: center;
+}
+
+/* Общие параметры для двух списков верхней линии */
+.studio-list-page,
+.studio-list-contacts {
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+/*  hover и focus для ссылок навигации по сайту*/
+.link.current,
+.studio-list-page .link:hover,
+.studio-list-page .link:focus,
+.studio-list-contacts .link:hover,
+.studio-list-contacts .link:focus {
+  color: var(--text-accent);
+  --color3: var(--text-accent);
+}
+
+/* Контейнер для заголовка и кноки секции Шапка */
+.primary-box {
+  display: inline-block;
+  width: 696px;
+}
+
+/* Параметры заголовка h1 на странице Studio */
+.primary .title {
+  margin-bottom: 30px;
+
+  color: var(--text-white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+}
+
+/* Параметры кнопки в секции Шапка*/
+.primary .button {
+  padding: 10px;
+  min-width: 200px;
+  color: var(--text-white);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  border: none;
+  border-radius: 4px;
+  background-color: var(--bgd-accent);
+  cursor: pointer;
+}
+
+/* Секция Особенности */
+.features-list {
+  justify-content: space-between;
+}
+
+/* Карточка Особенности */
+.features-card {
+  /* width: 270px; */
+  width: calc((100% - 30px * 3) / 4);
+  text-align: start;
+  line-height: 1.71;
+}
+.features-card > .title {
+  margin-bottom: 10px;
+
+  color: var(--text-header);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features-image {
+  background-color: var(--bgd-second);
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.features-icon {
+  width: 70px;
+  height: 70px;
+}
+
+/* Секция Чем мы занимаемся */
+.activity .title {
+  margin-bottom: 50px;
+}
+
+/* Карточка - наша деятельность */
+.activity-card {
+  justify-content: center;
+  width: calc((100% - 30px * 2) / 3);
+}
+.activity-card:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+/* Секция Наша команда */
+.team {
+  background-color: var(--bgd-second);
+}
+.team > .container > .title {
+  margin-bottom: 50px;
+}
+.team-card-image {
+  justify-content: center;
+}
+
+/* Карточка Наша команда */
+.team-card {
+  flex-direction: column;
+  align-items: center;
+  width: calc((100% - 30px * 3) / 4);
+
+  background-color: var(--bgd-primary);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-card:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+/*Раздел с текстом под фото в карточке Наша команда  */
+.team-card-title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team-card-title > .title {
+  margin-bottom: 10px;
+
+  color: var(--text-header);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/*Текст-доложность в карточке Наша команда */
+.team-card-title > .text {
+  color: var(--text-main);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 10px;
+}
+
+/* Ссылки на соц.сети в карточках Наша команда */
+.social-item:not(:nth-child(4)) {
+  margin-right: 10px;
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+.social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.team .social-link {
+  background-color: var(--bgd-footer-icon);
+  --color3: var(--bgd-icon);
+}
+.team .social-link:hover {
+  background-color: var(--bgd-accent);
+  --color3: var(--text-white);
+}
+
+/* Секция Постоянные клиенты */
+
+.clients-list > .item {
+  width: calc((100% - 30px * 5) / 6);
+}
+.clients-list .item:not(:nth-child(6n)) {
+  margin-right: 30px;
+}
+.client-link {
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 170px;
+  border: 1px solid var(--bgd-icon);
+  border-radius: 4px;
+}
+/* Ховер на логотипы-ссылки на сайты клиентов */
+.client-link:hover {
+  --color2: var(--bgd-accent);
+  border: 1px solid var(--bgd-accent);
+}
+.clients .title {
+  margin-bottom: 50px;
+}
+
+/* Футер */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer > .flexbox {
+  align-items: baseline;
+}
+.footer-contacts {
+  margin-right: 70px;
+  min-width: 231px;
+  text-align: start;
+}
+
+/* Адрес: ссылки и текст  */
+.address-mail {
+  margin-top: 0px;
+  margin-bottom: 9px;
+
+  color: var(--text-white);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+}
+.address-email,
+.address-tel {
+  display: block;
+
+  color: var(--text-address);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+}
+.address-email {
+  margin-bottom: 9px;
+}
+
+/* Логотип в футтере */
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Текст над ссылками на соц.сети в футере */
+.footer-social > .text {
+  margin-bottom: 20px;
+  text-align: start;
+  color: var(--text-white);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.14;
+}
+
+/* Ссыли на соц.сети в футере */
+.footer .social-link {
+  background-color: var(--bgd-footer-icon);
+  --color4: var(--text-white);
+  align-items: center;
+}
+.footer .social-link:hover {
+  background-color: var(--bgd-accent);
+}
+
+/* Марджины и паддинги для списка фильтров в верхней части секции Портфолио*/
+.portfolio-filter {
+  margin-bottom: 34px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 16px;
+  cursor: pointer;
+
+  justify-content: center;
+}
+
+/* Кнопки-фильтры в портфолио  */
+.portfolio-filter .button {
+  align-items: flex-start;
+  margin-right: 8px;
+  padding: 6px 22px;
+
+  color: var(--text-header);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  background-color: var(--bgd-second);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* Ховер и фокус для кнопок фильтров портфолио */
+.portfolio-filter .button:hover,
+.portfolio-filter .button:focus {
+  color: var(--text-white);
+  background-color: var(--bgd-accent);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+/* Правый марджин для сетки многострочного контейнера, исключаем каждый третий */
+.portfolio-card:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+/* Нижний марджин для сетки многострочного контейнера, исключаем три нижних */
+.portfolio-card:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+/* Рассчет ширины карточки в портфолио */
+.portfolio-card {
+  width: calc((100% - 2 * 30px) / 3);
+}
+
+/* Заголовки под карточками в портфолио */
+.portfolio-card-title > .title {
+  margin-bottom: 4px;
+
+  color: var(--text-header);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/* Бордер с трех сторон контейнера с текстом под имиджем карточек портфолио */
+.portfolio-card-title {
+  padding: 20px 24px;
+
+  border-right: 1px solid var(--bgd-border);
+  border-bottom: 1px solid var(--bgd-border);
+  border-left: 1px solid var(--bgd-border);
+  text-align: start;
+}
+
+/* Текст под карточками портфолио */
+.portfolio-card-title > .text {
+  color: var(--text-main);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+/* Тень при ховере на карточках-ссылках портфолио */
+.portfolio-link {
+  display: inline-block;
+  width: 370px;
+}
+
+.portfolio-link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* ...........Для тестирования.................. */
+
+/* .container,
+.features-card,
+.team-card,
+.activity-card,
+.portfolio-card,
+.social-item,
+.footer-social,
+.features-image {
+  outline: 2px solid green !important;
+} */
