@@ -1,0 +1,8 @@
+svg оптимизатор
+https://jakearchibald.github.io/svgomg/
+
+сайт для создания иконок и общего архивного файла symbol-defs.svg  который переменовуем (sprite)
+https://icomoon.io/
+
+Оптимизатор JPG
+https://squoosh.app

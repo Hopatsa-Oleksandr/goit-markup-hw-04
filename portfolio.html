@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio. Studio.</title>
+    <title>Portfolio</title>
 
     <!-- Подключаю шрифты проекта -->
     <link
@@ -24,12 +24,12 @@
   <body class="portfolio-page">
     <!--Верхняя линия-->
     <header class="section header">
-      <div class="container topline flexbox">
-        <nav class="studio-nav nomargin flexbox">
+      <div class="container linetop flex">
+        <nav class="studio-nav Reset-indents flex">
           <a href="" class="link logo">
             <span class="logo-part-one">Web</span>Studio</a
           >
-          <ul class="list studio-list-page flexbox">
+          <ul class="list studio-list-page flex">
             <li class="item">
               <a href="./index.html" class="link">Студия</a>
             </li>
@@ -41,19 +41,20 @@
             </li>
           </ul>
         </nav>
-        <ul class="list studio-list-contacts flexbox">
+        <!--Контакты📱 ✉️-->
+        <ul class="list studio-list-contacts flex">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="link flexbox">
+            <a href="mailto:info@devstudio.com" class="link flex">
               <svg class="contact-mail-icon">
-                <use href="./svg-orig/sprite.svg#icon-envelope"></use>
+                <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="link flexbox">
+            <a href="tel:+380961111111" class="link flex">
               <svg class="contact-tell-icon">
-                <use href="./svg-orig/sprite.svg#icon-smartphone"></use>
+                <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
@@ -66,7 +67,7 @@
         <!--  Позже скрыть заголовок этой секции-->
         <h1 class="visually-hidden">Портфолио</h1>
         <div class="container">
-          <ul class="list portfolio-filter flexbox">
+          <ul class="list portfolio-filter flex">
             <li><button type="button" class="button">Все</button></li>
             <li>
               <button type="button" class="button">Веб-сайты</button>
@@ -80,7 +81,7 @@
             </li>
           </ul>
           <!--Проекты-->
-          <ul class="list portfolio-list flexbox wrap">
+          <ul class="list portfolio-list flex wrap">
             <li class="portfolio-card">
               <a href="" class="link portfolio-link">
                 <div class="portfolio-card-image">
@@ -92,7 +93,7 @@
                 </div>
                 <div class="portfolio-card-title">
                   <h2 class="title">Технокряк</h2>
-                  <p class="text nomargin">Веб-сайт</p>
+                  <p class="text Reset-indents">Веб-сайт</p>
                 </div>
               </a>
             </li>
@@ -110,7 +111,7 @@
                     Постер <span lang="en">New Orlean vs Golden Star</span>
                   </h2>
 
-                  <p class="text nomargin">Дизайн</p>
+                  <p class="text Reset-indents">Дизайн</p>
                 </div>
               </a>
             </li>
@@ -125,7 +126,7 @@
                 </div>
                 <div class="portfolio-card-title">
                   <h2 class="title">Ресторан <span lang="en">Seafood</span></h2>
-                  <p class="text nomargin">Приложение</p>
+                  <p class="text Reset-indents">Приложение</p>
                 </div>
               </a>
             </li>
@@ -137,7 +138,7 @@
 
                 <div class="portfolio-card-title">
                   <h2 class="title">Проект <span lang="en">Prime</span></h2>
-                  <p class="text nomargin">Маркетинг</p>
+                  <p class="text Reset-indents">Маркетинг</p>
                 </div>
               </a>
             </li>
@@ -149,7 +150,7 @@
                 <div class="portfolio-card-title">
                   <h2 class="title">Проект <span lang="en">Boxes</span></h2>
 
-                  <p class="text nomargin">Приложение</p>
+                  <p class="text Reset-indents">Приложение</p>
                 </div>
               </a>
             </li>
@@ -160,7 +161,7 @@
                 </div>
                 <div class="portfolio-card-title">
                   <h2 class="title" lang="en">Inspiration has no Borders</h2>
-                  <p class="text nomargin">Веб-сайт</p>
+                  <p class="text Reset-indents">Веб-сайт</p>
                 </div>
               </a>
             </li>
@@ -177,7 +178,7 @@
                   <h2 class="title">
                     Издание <span lang="en">Limited Edition</span>
                   </h2>
-                  <p class="text nomargin">Дизайн</p>
+                  <p class="text Reset-indents">Дизайн</p>
                 </div>
               </a>
             </li>
@@ -189,7 +190,7 @@
                 <div class="portfolio-card-title">
                   <h2 class="title">Проект <span lang="en">LAB</span></h2>
 
-                  <p class="text nomargin">Маркетинг</p>
+                  <p class="text Reset-indents">Маркетинг</p>
                 </div>
               </a>
             </li>
@@ -204,7 +205,7 @@
                 </div>
                 <div class="portfolio-card-title">
                   <h2 class="title" lang="en">Growing Business</h2>
-                  <p class="text nomargin">Приложение</p>
+                  <p class="text Reset-indents">Приложение</p>
                 </div>
               </a>
             </li>
@@ -213,15 +214,17 @@
       </section>
     </main>
     <footer class="section footer">
-      <div class="container flexbox">
+      <div class="container flex">
         <div class="footer-contacts">
           <a href="" class="link logo">
             <span class="logo-part-one">Web</span
             ><span class="logo-part-two">Studio</span></a
           >
 
-          <address class="footer-address .nomargin">
-            <p class="address-mail nomargin">г. Киев, пр-т Леси Украинки, 26</p>
+          <address class="footer-address .Reset-indents">
+            <p class="address-mail Reset-indents">
+              г. Киев, пр-т Леси Украинки, 26
+            </p>
             <a href="mailto:info@example.com" class="link address-email"
               >info@example.com
             </a>
@@ -231,33 +234,33 @@
           </address>
         </div>
         <div class="footer-social">
-          <p class="nomargin text">Присоединяйтесь</p>
-          <ul class="list social-list flexbox">
+          <p class="Reset-indents text">Присоединяйтесь</p>
+          <ul class="list social-list flex">
             <li class="social-item">
-              <a href="" class="social-link flexbox">
+              <a href="" class="social-link flex">
                 <svg class="social-icon">
-                  <use href="./svg-orig/sprite.svg#icon-instagram"></use>
+                  <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-item">
-              <a href="" class="social-link flexbox">
+              <a href="" class="social-link flex">
                 <svg class="social-icon">
-                  <use href="./svg-orig/sprite.svg#icon-twitter"></use>
+                  <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-item">
-              <a href="" class="social-link flexbox">
+              <a href="" class="social-link flex">
                 <svg class="social-icon">
-                  <use href="./svg-orig/sprite.svg#icon-facebook"></use>
+                  <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-item">
-              <a href="" class="social-link flexbox">
+              <a href="" class="social-link flex">
                 <svg class="social-icon">
-                  <use href="./svg-orig/sprite.svg#icon-linkedin"></use>
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
