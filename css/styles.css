@@ -74,6 +74,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  max-width: 1600px;
 }
 
 /* основной контейнер */
@@ -96,11 +97,11 @@ img {
 }
 
 /* шапка и подвал */
-.primary,
 .footer {
   background-color: var(--bgd-header-footer);
+  max-width: 1600px;
 }
-
+/* .primary */
 /* паддинги секций */
 .features,
 .team,
